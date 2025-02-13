@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript Modal</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h1>Javascript Modal</h1>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+
+    <h1>JavaScript Modal</h1>
+
+    <!-- image container -->
     <div class="image-container">
         <img src="ai.webp">
     </div>
 
     <div class="button-container">
-        <div class="button">View Image</div>
+        <div class="button" onclick="openModalBox()">View Image</div>
     </div>
-    
+
+
+    <!-- image modal -->
+    <div class="modal-container">
+
+        <div class="modal-box">
+            <img src="ai.webp" />
+
+            <div class="close" onclick="closeModalBox()">
+                <i class="fa fa-times-circle" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
